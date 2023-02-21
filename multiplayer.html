@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="multiplayer.css">
+        <script src="multiplayer.js" defer></script>
+        <title>tic-tac-toe</title>
+        <link rel="icon" type="favicon" href="assets/favicon-32x32.png">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="icon-logo-div">
+                    <img src="assets/logo.svg" alt="logo">
+                </div>
+                
+                <div class="turn-div">
+                    <span class="turn-span">x</span>
+                    <span>turn</span>
+                </div>
+
+                <div class="restart-div">
+                    <img src="assets/icon-restart.svg" alt="icon-restart">
+                </div>
+            </div>
+
+            <div class="game-board">
+                <button class="boxes" value="1"></button>
+                <button class="boxes" value="2"></button>
+                <button class="boxes" value="3"></button>
+                <button class="boxes" value="4"></button>
+                <button class="boxes" value="5"></button>
+                <button class="boxes" value="6"></button>
+                <button class="boxes" value="7"></button>
+                <button class="boxes" value="8"></button>
+                <button class="boxes" value="9"></button>
+            </div>
+
+            <div class="footer">
+                <div>
+                    <p>x (p1)</p>
+                    <p class="x-score">0</p>
+                </div>
+                
+                <div>
+                    <p>ties</p>
+                    <p class="ties-score">0</p>
+                </div>
+
+                <div>
+                    <p>o (p2)</p>
+                    <p class="o-score">0</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="alert-div hidden">
+            <div class="player-winner">
+                <p></p>
+            </div>
+            
+            <div class="takes-round ">
+                <img class="icon-x-img hidden" src="assets/icon-x.svg" alt="icon-x">
+                <img class="icon-o-img hidden"src="assets/icon-o.svg" alt="icon-o">
+                <p class="">takes the round</p>
+            </div>
+
+            <div class="ties-div hidden">
+                <p>round tied</p>
+            </div>
+
+            <div class="next-div">
+                <button class="quit-btn">
+                    <p>quit</p>
+                </button>
+                <button class="next-round-btn">
+                    <p>next round</p>
+                </button>
+            </div>
+        </div>
+    </body>

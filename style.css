@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Space+Mono:wght@700&display=swap');
+body {
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    height:100vh;
+    text-transform: uppercase;
+    color: #A8BFC9;
+    text-align: center;
+    background-color: #1A2A33;
+}
+
+.container {
+    width: 327px;
+    height:429px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.choosing-role-div {
+    width:inherit;
+    height:205px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#1F3641;
+    box-shadow: inset 0px -8px 0px #10212A;
+    border-radius: 15px;
+    margin-top:32px;
+    margin-bottom: 32px;
+}
+
+.x-or-0-div {
+    width:279px;
+    height:72px;
+    background-color: #1A2A33;
+    border-radius: 10px;
+    display:flex;   
+    padding:9px; 
+}
+.x-or-0-div div {
+    width:131px;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 10px;  
+}
+.x-or-0-div img {
+    width:32px;
+    height:32px;
+}
+.mark-div {
+    filter: contrast(0.1);
+}
+
+.choosing-role-div h3 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.875px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 30px;
+}
+
+.vs {
+    width:inherit;
+    height:56px;
+    color: #1A2A33;
+    border-radius: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vs-cpu {
+    background-color: #F2B137;
+    box-shadow: inset 0px -8px 0px #CC8B13;
+}
+.vs-player {
+    background-color: #31C3BD;
+    box-shadow: inset 0px -8px 0px #118C87;
+    margin-top:16px;
+}
+
+@media screen and (min-width:600px){
+    .container {
+        width:460px;
+        height:471px;
+    }
+
+    .choosing-role-div {
+        width:inherit;
+        margin-top:40px;
+        margin-bottom: 40px;
+        padding-top: 24px;
+    }
+    .x-or-0-div {
+        width:412px;
+    }
+    .x-or-0-div div {
+        width:198px;
+    }
+
+    .vs {
+        width:inherit;
+        height:67px;
+    }
+    .vs p{
+        font-size:20px;
+        line-height:25px;
+        letter-spacing: 1.25px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .container {
+        height:fit-content;
+    }
+    .vs-player {
+        margin-top:20px;
+    }
+}
+
+/* hover */
+.vs:hover {
+    cursor: pointer;
+}
+.mark-div:hover {
+    cursor: pointer;
+    background-color: #A8BFC9;
+    filter:none;
+}
+.mark-div-not-active {
+    pointer-events: none;
+}
